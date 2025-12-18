@@ -1,0 +1,41 @@
+.introducao{
+    max-width: 1200px;
+    padding: 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.introducao img{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.introducao h2{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    color: rgb(8, 8, 8);
+}
+
+@media(max-width: 1000px){
+.introducao h2 { 
+   font-size: 3rem;
+}
+}
+
+@media(max-width: 800px){
+    .introducao {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.introducao img {
+margin: 0 auto;
+}
+
+.introducao h2{
+    font-size: 2rem;
+}
+}
+
